@@ -1,0 +1,33 @@
+/* p{
+    text-align: center;
+} */
+
+/* id selector */
+/* #mypara{
+    text-align: center;
+} */
+
+/* class selector */
+/* .mypara{
+    text-align: center;
+} */
+
+/* *{
+    text-align: center;
+} */
+
+/* grouping selectors */
+
+/* h1 , #mypara{
+text-align: center;
+color: cornflowerblue;
+} */
+
+p:hover{
+    background-color: purple;
+}
+
+a[target]{
+    color: black;
+    text-decoration: none;
+}
