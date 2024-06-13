@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    <!-- <h1 onclick="this.innerHTML='This is after click'">DOM working in this page</h1>
+    <h1 onclick="changeText(this)">DOM working in this page</h1>
+    <p>I am so sick of this. Alwayas just letting it go</p>
+    <article class="first_article">
+        <div class="wrapper-1">
+    <ul>
+        <li>Mangoes</li>
+        <li>Guava</li>
+        <li>Lichi</li>
+        <li>Oranges
+            <ul>
+                <li>Nagpur</li>
+                <li>Haryana</li>
+                <li>Punjab</li>
+            </ul>
+        </li>
+        <li>Bananas</li>
+    </ul>
+    <button class="btn-1">Read the full list</button>
+</div>
+    </article>
+
+    <article class=" second_article">
+        <h2>Places To visit in South Korea</h2>
+        <p> Must visit places in south korea</p>
+        <div class="wrapper-2">
+            <ul class="place-list">
+                <li>Seoul</li>
+                <li>Daegu</li>
+                <li>Jeju</li>
+            </ul>
+
+            <button class="btn-2">Read the full list</button><br> -->
+           <button onclick="displayDate()"> The time is: </button>
+           <p id="demo"></p>
+        </div>
+    <!-- </article> -->
+
+ <!-- it will reload automatically because of the form -->
+    <!-- <form> 
+        <input type="text" id="firstname" onchange="upperCase()">
+    </form>
+</main> -->
+
+
+<!-- mOver and mOut are the name of the functions we will create -->
+<div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color: purple; width: 120px; height: 20px; padding: 40px;"> 
+
+</div>
+<script>
+    function changeText(id){
+        id.innerHTML="This after the click on the heading text";
+    };
+    function displayDate(){
+        document.getElementById("demo").innerHTML= new Date();
+
+    }
+
+
+    function upperCase(){
+        const x= document.getElementById("firstname");
+        x.value=x.value.toUpperCase();
+    }
+
+
+    // mouse over and out event
+    function mOver(obj){
+        obj.innerHTML= "Thank you Tanuja darling";
+    }
+    function mOut(obj){
+        obj.innerHTML= "Bbye take care sweety";
+    }
+
+    function mDown(obj){
+       obj.style.backgroundColor=  "cyan";
+       obj.innerHTML= "Release me"; 
+    }
+    function mUp(obj){
+       obj.style.backgroundColor=  "plum";
+       obj.innerHTML= "Go Up now"; 
+    }
+</script>
+</body>
+</html>
