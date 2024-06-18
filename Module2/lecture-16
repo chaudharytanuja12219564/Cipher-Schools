@@ -1,0 +1,26 @@
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  const Name="Tanuja";
+  return (
+    <>
+    <div style={{
+      textAlign: "center",
+      color:"purple",
+
+    }
+  }>
+      <h1>Hi This is {Name}</h1></div>
+      <div style={{
+        textAlign: "center",
+        color:"blue",
+        fontSize:"30px"
+      }}>You should be proud honey you are learning REACT</div>
+      </>
+  );
+
+
+}
+
+export default App;
